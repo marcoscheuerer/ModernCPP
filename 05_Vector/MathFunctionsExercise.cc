@@ -3,7 +3,7 @@
 #include <cmath>
 
 // Exercise:
-// 1. Schreibe eine Funktion, die einen Vektor mit aufsteigendem Wert
+// 1. Schreibe eine Funktion, die einen Vektor mit aufsteigendem Wert füllt
 //    void fill_vector(std::vector<double> &vec)
 // 2. Schreibe eine Funktion, die die Werte eines Vektors ausgibt
 //    void print_vector(const std::vector<double> &vec)
