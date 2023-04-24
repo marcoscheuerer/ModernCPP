@@ -11,4 +11,13 @@
  */
 void print_vector(const std::int32_t *vector, const std::int32_t LEN);
 
+/**
+ * @brief Search for the maximum value of the dynamic array
+ *
+ * @param vector One-dimensional array
+ * @param LEN Length of the array
+ * @return Returns the maximum value
+ */
+int vector_maximum_value(const std::int32_t *vector, const std::size_t LEN);
+
 #endif
