@@ -33,6 +33,14 @@ int main()
     const auto index3 = text.rfind(search_str3);
     print_found_index(index3, "rfind()");
 
+    const auto search_str4 = "ZD";
+    const auto index4 = text.find_first_of(search_str4);
+    print_found_index(index4, "find_first_of()");
+
+    const auto search_str5 = "ZD";
+    const auto index5 = text.find_last_of(search_str5);
+    print_found_index(index5, "find_first_of()");
+
 
 
     return 0;
