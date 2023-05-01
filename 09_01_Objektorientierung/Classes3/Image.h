@@ -17,4 +17,7 @@ class Image
     Image(const std::uint32_t width, const std::uint32_t height);
     // Destructor
     ~Image();
+    // Methods
+    void save_image(const char *file_name) const;
+
 };

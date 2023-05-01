@@ -5,12 +5,12 @@
 class Image
 {
     private:
-    std::uint32_t m_width;
-    std::uint32_t m_height;
+        std::uint32_t m_width;
+        std::uint32_t m_height;
 
     public:
-    // Constructor
-    Image(const std::uint32_t width, const std::uint32_t height);
-    ~Image();
-
+        // Constructor
+        Image(const std::uint32_t width, const std::uint32_t height);
+        // Destructor
+        ~Image();
 };

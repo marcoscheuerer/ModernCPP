@@ -1,7 +1,7 @@
 #include "Image.h"
 #include <iostream>
 
-Image::Image(const std::uint32_t width, const std::uint32_t height)
+Image::Image(const std ::uint32_t width, const std::uint32_t height)
 {
     m_width = width;
     m_height = height;
