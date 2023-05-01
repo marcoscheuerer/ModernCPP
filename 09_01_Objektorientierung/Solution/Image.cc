@@ -77,3 +77,64 @@ void Image::save_image(const char *file_name) const
     delete[] img;
     img = nullptr;
 }
+
+void Image::set_pixel(const std::uint32_t x,
+                      const std::uint32_t y,
+                      const::uint8_t value)
+{
+    m_matrix.at(x).at(y) = value;
+}
+
+std::uint32_t Image::get_height() const
+{
+    return m_height;
+}
+
+std::uint32_t Image::get_width() const
+{
+    return m_width;
+}
+
+GrayscaleMatrix &Image::get_matrix()
+{
+    return m_matrix;
+}
+
+// Exercise 1
+void Image::clear_image()
+{
+    m_matrix.clear();
+    m_width = 0;
+    m_height = 0;
+}
+
+// Exercise 2
+void Image::resize_image(const std::uint32_t new_width, const std::uint32_t new_height)
+{
+    m_width = new_width;
+    m_height = new_height;
+}
+
+// Exercise 3
+void Image::fill_image(const std::uint8_t value)
+{
+    for (std::uint32_t rows = 0; rows < m_height; rows++)
+    {
+        for (std::uint32_t cols = 0; cols < m_width; cols++)
+            get_matrix().at(rows).at(cols) = value;
+    }
+}
+
+// Exercise 4
+void Image::draw_line(const std::uint32_t x1,
+                      const std::uint32_t y1,
+                      const std::uint32_t x2,
+                      const std::uint32_t y2,
+                      const std::uint8_t value)
+{
+    for (std::uint32_t rows = 0; rows < m_height; rows++)
+    {
+        for (std::uint32_t cols = 0; cols < m_width; cols++)
+            get_matrix().at(rows).at(cols) = value;
+    }
+}
