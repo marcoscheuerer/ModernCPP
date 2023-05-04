@@ -19,10 +19,7 @@ Agent::~Agent()
     std::cout << "Agent Destructor!\n";
 }
 
-// abstract method doesn't need a function definition!
-/*
 void Agent::print_agent_data() const
 {
     std::cout << "Agent hp: " << m_hp << ", energy: " << m_energy << '\n';
 }
-*/
